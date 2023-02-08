@@ -5,7 +5,7 @@ import { RiAppsLine } from "react-icons/ri";
 
 function Navbar() {
   return (
-    <div>
+    <div className="z-20">
       {/* mobile layout size -------------------->  */}
       <div className="fixed bottom-0 w-full py-4 px-8 border-t-[1px] border-gray-200 bg-white flex items-center justify-between">
         <h3 className="font-medium">Linushahs</h3>

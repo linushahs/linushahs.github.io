@@ -2,6 +2,7 @@ import "./App.css";
 import Landingpage from "./components/Landingpage";
 import Navbar from "./components/Navbar";
 import About from "./components/About";
+import Skills from "./components/skills/Skills";
 
 function App() {
   return (
@@ -11,6 +12,8 @@ function App() {
       <Landingpage />
       {/* About page ------------------------------>  */}
       <About />
+      {/* SKills page -----------------------------> */}
+      <Skills />
     </div>
   );
 }
