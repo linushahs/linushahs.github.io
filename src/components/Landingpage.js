@@ -17,7 +17,7 @@ function Landingpage() {
       <div className="container flex flex-col-reverse  sm:flex-row">
         {/* profile description -------------------------->  */}
         <div className="pt-[28px] sm:pl-[40px] sm:pt-[100px]">
-          <h1 className="text-3xl lg:text-[40px] font-medium ">
+          <h1 className="text-3xl lg:text-[48px] font-bold ">
             Hi, I'am Sunil Shah
           </h1>
           <h3 className="text-gray-700 font-medium text-lg lg:text-2xl pt-3">

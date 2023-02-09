@@ -5,7 +5,7 @@ function SkillPosition({ skillDetails, handleSkillSet, skillNo }) {
   const { title, experience, active, skills } = skillDetails;
 
   return (
-    <div className="w-full mx-auto mb-4">
+    <div className="w-full lg:w-[50%] pr-4">
       <div className="flex items-center justify-between">
         <div className="flex gap-3 items-center">
           <img src="./curly-bracket.png" alt="" className="w-12 h-12" />

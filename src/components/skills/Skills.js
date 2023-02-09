@@ -76,11 +76,11 @@ function Skills() {
   };
 
   return (
-    <div className="px-8 py-8 h-screen flex flex-col items-center">
-      <h1 className="text-2xl font-medium">Skills</h1>
+    <div className="container px-8 py-[150px] flex flex-col items-center">
+      <h1 className="text-2xl lg:text-[34px] font-medium">Skills</h1>
       <h3 className="text-gray-600 mt-1 mb-3">My technical level</h3>
 
-      <div className="w-full flex flex-col my-4">
+      <div className="w-full pt-6 flex flex-col lg:flex-row gap-y-4 flex-wrap my-4">
         {listOfSkills.map((skillset, id) => (
           <SkillPosition
             key={id}
