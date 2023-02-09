@@ -10,6 +10,8 @@ function Navbar() {
       {/* ------------------------------------------------ > */}
       <div className="lg:hidden fixed bottom-0 w-full py-4 px-8 border-t-[1px] border-gray-200 bg-white flex items-center justify-between">
         <h3 className="font-medium">Linushahs</h3>
+
+        {/* Navbar section goes here ------------------->  */}
         <div className="flex gap-3 items-center">
           <HiOutlineMoon className="cursor-pointer text-2xl hover:text-blue-500" />
           <RiAppsLine className="cursor-pointer text-2xl hover:text-blue-500" />
