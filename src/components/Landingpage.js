@@ -18,10 +18,10 @@ function Landingpage() {
         {/* profile description -------------------------->  */}
         <div className="pt-[28px] sm:pl-[40px] sm:pt-[100px]">
           <h1 className="text-3xl lg:text-[48px] font-bold ">
-            Hi, I'am Sunil Shah
+            Hi, I'm Sunil Shah
           </h1>
           <h3 className="text-gray-700 font-medium text-lg lg:text-2xl pt-3">
-            Frontend Web Developer
+            Frontend Developer
           </h3>
           <p className="text-sm lg:text-lg text-gray-500 pt-5">
             High level experience in web design and development knowledge,
