@@ -16,6 +16,7 @@ function App() {
       <Skills />
 
       {/* ---Made few changes for contribution ----- */}
+      {/* ----Learning so many stuffs ---------------- */}
     </div>
   );
 }
