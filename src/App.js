@@ -16,7 +16,8 @@ function App() {
       <Skills />
 
       {/* ---Made few changes for contribution ----- */}
-      {/* ----Learning so many stuffs ---------------- */}
+      {/* ----Learning so many stuffs ----------------  */}
+      {/* --Learned graphql, routing and other basic stuffs --------------->  */}
     </div>
   );
 }
