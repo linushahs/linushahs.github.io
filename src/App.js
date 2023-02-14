@@ -15,10 +15,10 @@ function App() {
       {/* SKills page -----------------------------> */}
       <Skills />
 
-      {/* ---Made few changes for contribution ----- */}
       {/* ----Learning so many stuffs ----------------  */}
       {/* --Learned graphql, routing and other basic stuffs --------------->  */}
       {/* Learned graphql concepts much more in abstract way---------->  */}
+      {/* Learned next.js routing concept ---------------------> */}
     </div>
   );
 }
