@@ -19,6 +19,8 @@ function App() {
       {/* --Learned graphql, routing and other basic stuffs --------------->  */}
       {/* Learned graphql concepts much more in abstract way---------->  */}
       {/* Learned next.js routing concept ---------------------> */}
+      {/* Learned react-query and it's usecase in graphql----------------------------------------->  */}
+      {/* Concepts that are going to be used in internsathi website are in my mind-------------->  */}
     </div>
   );
 }
