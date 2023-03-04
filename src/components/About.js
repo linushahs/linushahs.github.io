@@ -3,7 +3,7 @@ import { HiOutlineCloudDownload } from "react-icons/hi";
 
 function About() {
   return (
-    <div className="container px-8 pt-14 sm:py-8 mt-6 flex flex-col items-center">
+    <div className="container px-8  mt-6 flex flex-col items-center">
       <h1 className="text-2xl lg:text-[34px] font-medium">About Me</h1>
       <h3 className="text-gray-600 mt-1 mb-3">My Introduction</h3>
 

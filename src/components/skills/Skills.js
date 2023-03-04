@@ -23,42 +23,6 @@ function Skills() {
         },
       ],
     },
-    {
-      title: "Backend developer",
-      experience: "Less than 1 year",
-      active: false,
-      skills: [
-        { skillTitle: "Node Js", per: "30%" },
-        {
-          skillTitle: "Firebase",
-          per: "30%",
-        },
-        {
-          skillTitle: "GraphQL",
-          per: "30%",
-        },
-        {
-          skillTitle: "Mongo db",
-          per: "20%",
-        },
-      ],
-    },
-    {
-      title: "Designer",
-      experience: "1 year",
-      active: false,
-      skills: [
-        { skillTitle: "Figma", per: "60%" },
-        {
-          skillTitle: "Photoshop",
-          per: "40%",
-        },
-        {
-          skillTitle: "Adobe Xd",
-          per: "50%",
-        },
-      ],
-    },
   ]);
 
   const handleSkillSet = (id) => {
@@ -80,7 +44,7 @@ function Skills() {
       <h1 className="text-2xl lg:text-[34px] font-medium">Skills</h1>
       <h3 className="text-gray-600 mt-1 mb-3">My technical level</h3>
 
-      <div className="w-full pt-6 flex flex-col lg:flex-row gap-y-4 flex-wrap my-4">
+      <div className="w-full pt-6 flex justify-center  mt-4">
         {listOfSkills.map((skillset, id) => (
           <SkillPosition
             key={id}

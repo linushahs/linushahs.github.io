@@ -5,10 +5,10 @@ import { RiAppsLine } from "react-icons/ri";
 
 function Navbar() {
   return (
-    <div className="z-20">
+    <>
       {/* mobile layout size -------------------->  */}
       {/* ------------------------------------------------ > */}
-      <div className="lg:hidden fixed bottom-0 w-full py-4 px-8 border-t-[1px] border-gray-200 bg-white flex items-center justify-between">
+      <div className="lg:hidden fixed bottom-0 w-full z-20 py-4 px-8 border-t-[1px] border-gray-200 bg-white flex items-center justify-between">
         <h3 className="font-medium">Linushahs</h3>
 
         {/* Navbar section goes here ------------------->  */}
@@ -20,7 +20,7 @@ function Navbar() {
 
       {/* large screen layout size --------------------->  */}
       {/* ------------------------------------------------>  */}
-      <header className="hidden lg:flex h-[68px] items-center shadow py-4 ">
+      <header className="hidden fixed bg-white w-full z-20 lg:flex h-[68px] items-center shadow py-4 ">
         <nav className="header-container px-8 flex items-center justify-between">
           <h3 className="text-[#333] font-medium">Linushahs</h3>
           <ul className="flex gap-8">
@@ -34,7 +34,7 @@ function Navbar() {
           </ul>
         </nav>
       </header>
-    </div>
+    </>
   );
 }
 
