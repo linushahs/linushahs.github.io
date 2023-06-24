@@ -91,6 +91,7 @@ h5,
   }
   .container {
     width: 1110px;
+    background-size: cover;
     margin: 0 auto;
     padding: 0;
     @include media-breakpoint-up(lg) {
@@ -360,6 +361,11 @@ h5,
       opacity: 0;
       display: none;
     }
+  }
+
+  .home-bg {
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.2);
   }
 }
 
