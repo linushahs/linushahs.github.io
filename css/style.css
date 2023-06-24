@@ -8953,10 +8953,6 @@ a.text-dark:hover, a.text-dark:focus {
     border-color: #dee2e6;
   }
 }
-html {
-  scroll-behavior: smooth;
-}
-
 body {
   font-family: "Poppins", Arial, sans-serif;
   background: #000000;
@@ -9252,7 +9248,16 @@ h5,
 }
 .hero .home-bg {
   background-size: cover;
-  background-color: rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+.hero .home-bg::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
 .owl-carousel {
@@ -9934,7 +9939,7 @@ h5,
     opacity: 1;
   }
   .project.img-2 .text span {
-    color: rgba(255, 255, 255, 0.8);
+    color: rgb(255, 255, 255);
   }
 }
 .project .overlay {
@@ -9945,13 +9950,13 @@ h5,
   bottom: 0;
   content: "";
   opacity: 0;
-  background: #ffbd39;
+  background: radial-gradient(black 30%, #333333);
   z-index: -1;
   transition: all 0.3s ease;
 }
 @media (max-width: 767.98px) {
   .project .overlay {
-    opacity: 0.2;
+    opacity: 0.6;
   }
 }
 .project .text {
@@ -9982,7 +9987,7 @@ h5,
   }
 }
 .project:hover .overlay, .project:focus .overlay {
-  opacity: 0.9;
+  opacity: 0.6;
 }
 .project:hover .text, .project:focus .text {
   opacity: 1;
