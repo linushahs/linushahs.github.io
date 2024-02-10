@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind utilities;
+@tailwind components;
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "poppins", sans-serif;
+}
+body {
+  background-color: #0f172a;
+}
+
+@layer components {
+  .container {
+    @apply max-w-[1200px] mx-auto;
+  }
+  .normal {
+    @apply text-white opacity-[100%];
+  }
+}
