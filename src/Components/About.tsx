@@ -1,6 +1,6 @@
 function About() {
   return (
-    <div id="about" className="h-full flex justify-center pt-[110px]">
+    <div id="about" className="h-full flex justify-center">
       <div className="text-gray-400 flex flex-col gap-5 ">
         <p>
           Back in 2012, I decided to try my hand at creating custom Tumblr

@@ -1,12 +1,12 @@
 import "./App.css";
-import ExperienceCard from "./Components/ExperienceCard";
-import About from "./Components/About";
-import Profile from "./Components/Profile";
-import Projects from "./Components/Projects";
+import ExperienceCard from "./components/ExperienceCard";
+import About from "./components/About";
+import Profile from "./components/Profile";
+import Projects from "./components/Projects";
 
 function App() {
   return (
-    <div className="container h-screen flex basis-[50%]">
+    <div className="container flex pt-[110px]">
       <div className="w-full">
         <Profile />
       </div>

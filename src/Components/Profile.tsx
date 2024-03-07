@@ -8,12 +8,16 @@ function Profile() {
   const socialIcons = ["github", "linkedin", "codepen", "instagram"];
 
   return (
-    <div className="fixed h-full flex pl-10 items-center">
-      <div className="flex flex-col justify-between gap-[110px]">
+    <div className="fixed h-full flex ">
+      <div className="flex flex-col gap-[110px]">
         {/* top bar */}
         <div className="flex flex-col gap-2 justify-between">
-          <h1 className="text-white text-[50px] font-bold">Linus Hahs</h1>
-          <p className="normal text-[22px]">Frontend Developer at Microsoft</p>
+          <h1 className="text-white text-[50px] font-bold leading-[50px]">
+            Linus Hahs
+          </h1>
+          <p className="normal text-[22px] mt-2">
+            Frontend Developer at Microsoft
+          </p>
           <span className=" text-white opacity-[70%]">
             I build pixel-perfect, engaging, and <br /> accessible digital
             experiences.
