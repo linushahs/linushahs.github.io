@@ -18,8 +18,12 @@ function Projects() {
   };
 
   return (
-    <div id="projects" className="mt-[120px] flex flex-col gap-14 sm:gap-10">
-      <Title title="Projects" link="#" />
+    <div
+      id="projects"
+      className="pt-[110px] flex flex-col gap-14 sm:gap-10 pb-14"
+    >
+      <h3 className="section-title">Projects</h3>
+
       {listOfProjects.map(
         ({ title, image, description, rating, skills }, index) => (
           <section
@@ -27,11 +31,11 @@ function Projects() {
             onMouseEnter={() => handleMouseEnter(title)}
             onMouseLeave={handleMouseLeave}
             className={twMerge(
-              "group rounded sm:py-4 sm:px-5 cursor-pointer flex flex-col-reverse sm:flex-row gap-8 justify-center items-center transition-all duration-500 ease-in-out",
+              "group rounded-md  sm:p-5 cursor-pointer flex flex-col-reverse sm:flex-row gap-8 justify-center items-center transition-all duration-500 ease-in-out",
               isHovered
                 ? hoveredItem === title
-                  ? "sm:bg-gray-800"
-                  : "sm:opacity-60"
+                  ? "sm:bg-gray-800/60"
+                  : "sm:opacity-40"
                 : "sm:opacity-100"
             )}
           >
@@ -39,10 +43,10 @@ function Projects() {
               <img
                 src={image}
                 alt={title}
-                className="w-full h-auto rounded border-gray-600 border-2"
+                className="w-full h-auto rounded-md border-gray-600 border-2"
               />
             </div>
-            <div className="flex flex-col gap-3 flex-1">
+            <div className="flex flex-col gap-3 flex-1 pb-4">
               <Title title={title} link="#" />
               <div>
                 <p className="text-white opacity-[60%] text-sm">
@@ -58,9 +62,7 @@ function Projects() {
                 <div className="flex flex-wrap gap-2">
                   {skills.map((skill, i) => (
                     <div key={i}>
-                      <button className="bg-gray-700 text-[13px] text-primary font-semibold rounded-full px-3 py-1">
-                        {skill.name}
-                      </button>
+                      <button className="skill-btn">{skill.name}</button>
                     </div>
                   ))}
                 </div>
@@ -69,10 +71,6 @@ function Projects() {
           </section>
         )
       )}
-      <a href="#" className="pl-4 text-gray-300 text-md font-semibold">
-        {" "}
-        View Full Project Archive
-      </a>
     </div>
   );
 }

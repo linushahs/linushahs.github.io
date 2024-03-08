@@ -1,11 +1,18 @@
+import { twMerge } from "tailwind-merge";
+
 interface TitleProps {
   title: string;
   link: string;
+  className?: string;
 }
 
-function Title({ title, link = "#" }: TitleProps) {
+function Title({ title, link = "#", className }: TitleProps) {
   return (
-    <a href={link} className="group flex gap-2 relative">
+    <a
+      href={link}
+      target="_blank"
+      className={twMerge("group flex gap-2 relative", className)}
+    >
       <p className="group-hover:text-primary transition-colors duration-150 ease-in text-white opacity-[85%] text-lg">
         {title}
       </p>
