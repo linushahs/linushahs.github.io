@@ -55,6 +55,7 @@ function ExperienceCard() {
   };
   return (
     <div id="experience" className="mt-[120px] flex flex-col gap-12 ">
+      <Title title="Experience" link="#" />
       {experiences.map(
         (
           { title, role, description, date, links, technologiesIndex },
@@ -78,7 +79,7 @@ function ExperienceCard() {
             </div>
             <div>
               <div className="flex flex-col gap-4">
-                <Title title={title} link="#"/>
+                <Title title={title} link="#" />
                 <div>
                   <p className="text-white opacity-[60%] text-sm">
                     {description}

@@ -19,6 +19,7 @@ function Projects() {
 
   return (
     <div id="projects" className="mt-[120px] flex flex-col gap-14 sm:gap-10">
+      <Title title="Projects" link="#" />
       {listOfProjects.map(
         ({ title, image, description, rating, skills }, index) => (
           <section
