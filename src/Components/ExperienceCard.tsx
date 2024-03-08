@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { twMerge } from "tailwind-merge";
+import Title from "./Title";
 
 const technologies = [
   [
@@ -53,7 +54,7 @@ function ExperienceCard() {
     setHoveredItem("");
   };
   return (
-    <div id="experience" className="mt-[120px] flex flex-col gap-4 ">
+    <div id="experience" className="mt-[120px] flex flex-col gap-12 ">
       {experiences.map(
         (
           { title, role, description, date, links, technologiesIndex },
@@ -64,12 +65,12 @@ function ExperienceCard() {
             onMouseEnter={() => handleMouseEnter(title)}
             onMouseLeave={handleMouseLeave}
             className={twMerge(
-              "hover:bg-gray-800 group transition-all rounded py-4 px-5 cursor-pointer flex gap-8",
+              "sm:hover:bg-gray-800 group transition-all rounded sm:py-4 sm:px-5 sm:cursor-pointer flex flex-col gap-2 sm:flex-row sm:gap-8",
               isHovered
                 ? hoveredItem === title
-                  ? "bg-gray-800"
-                  : "opacity-60"
-                : "opacity-100"
+                  ? "sm:bg-gray-800"
+                  : "sm:opacity-60"
+                : "sm:opacity-100"
             )}
           >
             <div className="text-gray-500 font-semibold text-sm text-nowrap pt-1">
@@ -77,35 +78,7 @@ function ExperienceCard() {
             </div>
             <div>
               <div className="flex flex-col gap-4">
-                <div>
-                  <div className="flex gap-2 relative">
-                    <h1 className="text-white opacity-[85%] transition-all group-hover:text-primary text-lg">
-                      {title}
-                    </h1>
-                    <span>
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke-width="1.5"
-                        stroke="currentColor"
-                        className="text-white w-[14px] top-2 h-[14px] relative group-hover:text-primary transition-all group-hover:translate-x-1 group-hover:-translate-y-1"
-                      >
-                        <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
-                        />
-                      </svg>
-                    </span>
-                  </div>
-                  {role &&
-                    role.map((role, i) => (
-                      <p key={i} className="text-white opacity-[40%] text-md">
-                        {role}
-                      </p>
-                    ))}
-                </div>
+                <Title title={title} link="#"/>
                 <div>
                   <p className="text-white opacity-[60%] text-sm">
                     {description}
@@ -134,10 +107,7 @@ function ExperienceCard() {
           </div>
         )
       )}
-      <a href="#" className="pl-4 pt-4 text-gray-300 font-semibold">
-        {" "}
-        View Full Resume
-      </a>
+      <Title title="View full resume" link="#" />
     </div>
   );
 }

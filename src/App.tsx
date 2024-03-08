@@ -6,7 +6,7 @@ import Projects from "./components/Projects";
 
 function App() {
   return (
-    <div className="container flex pt-[110px]">
+    <div className="container flex flex-col lg:flex-row pt-14 sm:pt-[110px]">
       <div className="w-full">
         <Profile />
       </div>

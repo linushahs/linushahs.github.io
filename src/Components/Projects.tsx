@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { listOfProjects } from "../constants";
 import { twMerge } from "tailwind-merge";
+import Title from "./Title";
 
 function Projects() {
   const [hoveredItem, setHoveredItem] = useState("");
@@ -17,7 +18,7 @@ function Projects() {
   };
 
   return (
-    <div id="projects" className="mt-[120px] flex flex-col gap-10">
+    <div id="projects" className="mt-[120px] flex flex-col gap-14 sm:gap-10">
       {listOfProjects.map(
         ({ title, image, description, rating, skills }, index) => (
           <section
@@ -25,15 +26,15 @@ function Projects() {
             onMouseEnter={() => handleMouseEnter(title)}
             onMouseLeave={handleMouseLeave}
             className={twMerge(
-              "group rounded py-4 px-5 cursor-pointer flex gap-8 justify-center items-center transition-all duration-500 ease-in-out",
+              "group rounded sm:py-4 sm:px-5 cursor-pointer flex flex-col-reverse sm:flex-row gap-8 justify-center items-center transition-all duration-500 ease-in-out",
               isHovered
                 ? hoveredItem === title
-                  ? "bg-gray-800"
-                  : "opacity-60"
-                : "opacity-100"
+                  ? "sm:bg-gray-800"
+                  : "sm:opacity-60"
+                : "sm:opacity-100"
             )}
           >
-            <div className="w-[25%] self-start">
+            <div className="w-2/3 sm:w-[25%] self-start">
               <img
                 src={image}
                 alt={title}
@@ -41,27 +42,7 @@ function Projects() {
               />
             </div>
             <div className="flex flex-col gap-3 flex-1">
-              <div className="flex gap-2 relative">
-                <h1 className="group-hover:text-primary transition-colors duration-150 ease-in text-white opacity-[85%] text-lg">
-                  {title}
-                </h1>
-                <span>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke-width="1.5"
-                    stroke="currentColor"
-                    className="text-white w-[14px] top-2 h-[14px] relative group-hover:text-primary transition-all group-hover:translate-x-1 group-hover:-translate-y-1"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
-                    />
-                  </svg>
-                </span>
-              </div>
+              <Title title={title} link="#" />
               <div>
                 <p className="text-white opacity-[60%] text-sm">
                   {description}

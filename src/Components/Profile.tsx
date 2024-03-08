@@ -8,35 +8,34 @@ function Profile() {
   const socialIcons = ["github", "linkedin", "codepen", "instagram"];
 
   return (
-    <div className="fixed h-full flex ">
-      <div className="flex flex-col gap-[110px]">
+    <div className="lg:fixed h-full flex ">
+      <div className="flex flex-col lg:gap-[110px]">
         {/* top bar */}
         <div className="flex flex-col gap-2 justify-between">
-          <h1 className="text-white text-[50px] font-bold leading-[50px]">
+          <h1 className="text-white text-4xl sm:text-[50px] font-bold leading-[50px]">
             Linus Hahs
           </h1>
-          <p className="normal text-[22px] mt-2">
+          <p className="normal text-xl sm:text-[22px] mt-2">
             Frontend Developer at Microsoft
           </p>
-          <span className=" text-white opacity-[70%]">
+          <span className="text-base text-white opacity-[70%]">
             I build pixel-perfect, engaging, and <br /> accessible digital
             experiences.
           </span>
         </div>
         {/* link bar */}
-        <div className="flex flex-col gap-3">
+        <div className="hidden lg:flex flex-col gap-3">
           {linkItems.map((item, index) => (
-            <p
-              key={index}
-              className="normal uppercase text-sm flex items-center gap-2"
-            >
+            <div key={index} className="flex items-center gap-2">
               <hr className="w-10" />
-              <a href={item.href}>{item.label}</a>
-            </p>
+              <p key={index} className="normal uppercase text-sm ">
+                <a href={item.href}>{item.label}</a>
+              </p>
+            </div>
           ))}
         </div>
         {/* icon bar  */}
-        <div className="flex gap-4">
+        <div className="flex gap-4 mt-10 mb-14 lg:m-0">
           {socialIcons.map((icon, index) => (
             <img
               key={index}
