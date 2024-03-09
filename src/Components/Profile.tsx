@@ -96,12 +96,12 @@ function Profile() {
           <h1 className="text-white text-4xl sm:text-[50px] font-bold leading-[50px]">
             Sunil Shah
           </h1>
-          <p className="normal text-xl sm:text-[22px] mt-2">
+          <p className="normal text-xl sm:text-[22px] mt-1 sm:mt-2">
             Frontend Engineer
           </p>
-          <p className="text-base text-white opacity-[70%] sm:w-2/3 lg:w-1/2">
-            Passionate frontend developer seeking new opportunities to
-            contribute skills and expertise to your team.
+          <p className="text-base text-white opacity-[70%] sm:w-2/3 lg:w-[60%]">
+            Experienced frontend developer eager to contribute expertise to your
+            team.
           </p>
         </div>
         {/* link bar */}
