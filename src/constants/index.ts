@@ -2,6 +2,7 @@
 interface ProjectSection {
     image: string;
     title: string;
+    link: string;
     description: string;
     rating?: string;
     skills?: { name: string }[];
@@ -9,47 +10,67 @@ interface ProjectSection {
 
 export const listOfProjects: ProjectSection[] = [
     {
-        image: "/course-card.png",
-        title: "Build a Spotify Connected App",
+        image: "/moviestream.png",
+        title: "MovieStream Info App",
+        link: "https://moviestreaminfo.vercel.app/",
         description:
-            "Video course that teaches how to build a web app with the Spotify Web API. Topics covered include the principles of REST APIs, user mouth flows, Node, Express, React, Styled Components, and more.",
-        rating: "599",
+            "A web-based app offers comprehensive browsing and search functionalities for movies and series. Users can easily add or remove items from favorites for quick access. Integration with Google accounts allows for personalized experiences and cross-device synchronization of preferences.",
         skills: [
             { name: "React" },
-            { name: "Express" },
-            { name: "Spotify API" },
-            { name: "Heroku" },
+            { name: "Typescript" },
+            { name: "Tailwind CSS" },
+            { name: "Firebase" },
+            { name: "React Router" },
+            { name: "Recoil" },
+            { name: "shadcn ui" },
+            { name: "Swiper" },
         ],
     },
     {
-        image: "/spotify-profile.png",
-        title: "Spotify Profile",
+        image: "/nexus.png",
+        title: "Nexus Marketers' Website",
+        link: "https://www.nexusmarketers.com/",
         description:
-            "We ap for visualizing personalized Spotify data. View your top artists, top tracks, recently played tracks, and detailed audio information about each track. Create and save new playlists of recommended tracks based on your existing playlists and more.",
-        rating: "599",
+            "Nexus Marketers: Your digital growth partner. We craft compelling websites, employ innovative strategies, and master advanced SEO for elevated brand visibility and business success. Join us to amplify your online presence!",
         skills: [
-            { name: "Gatsby" },
-            { name: "Styled Components" },
-            { name: "Netlify" },
+            { name: "Nextjs" },
+            { name: "Tailwind CSS" },
+            { name: "GSAP" },
+            { name: "Sanity" },
+            { name: "Framer Motion" },
+            { name: "Typescript" },
+            { name: "Swiper" },
         ],
     },
     {
-        image: "/halcyon.png",
-        title: "Halcyon Theme",
+        image: "/kalodhunga.png",
+        title: "Kalodhunga Creations' Website",
+        link: "https://www.kalodhunga.com/",
         description:
-            "Minimal dark blue theme for VS Code, Sublime Text, Atom, iTerm, and more.",
-        rating: "100k+ Installs",
+            "Kalodhunga Creation is a company dedicated to creating cutting-edge software solutions, emphasizing innovation and accessibility",
+        skills: [
+            { name: "Nextjs" },
+            { name: "Tailwind CSS" },
+            { name: "GSAP" },
+            { name: "Sanity" },
+            { name: "Framer Motion" },
+            { name: "Typescript" },
+            { name: "Swiper" },
+        ]
     },
     {
-        image: "/spotify-profile.png",
-        title: "linushahs.com (v4)",
+        image: "/mstodo.png",
+        title: "Microsoft Todo Clone (In Progress 🚧)",
+        link: "https://microsoft-todo-clone-sepia.vercel.app/",
         description:
-            "And old portfolio site built with Gatsby with 6k+ stars and 3k+ forks.",
-        rating: "6,975",
+            "A React-based clone of Microsoft To-Do, providing a user-friendly interface for task management with features like list organization, due dates, and Microsoft account integration.",
         skills: [
-            { name: "Gatsby" },
-            { name: "Styled Components" },
-            { name: "Netlify" },
+            { name: "React" },
+            { name: "Tailwind CSS" },
+            { name: "Typescript" },
+            { name: "Redux Toolkit" },
+            { name: "Firebase" },
+            { name: "Framer Motion" },
         ],
     },
 ];

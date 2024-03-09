@@ -18,12 +18,12 @@ function Projects() {
   };
 
   return (
-    <div id="projects" className="pt-[110px]  pb-14">
+    <div id="projects" className="pt-[100px]  pb-14">
       <h3 className="section-title mb-6">Projects</h3>
 
       <div className="flex flex-col gap-14 sm:gap-10">
         {listOfProjects.map(
-          ({ title, image, description, rating, skills }, index) => (
+          ({ title, image,link, description, rating, skills }, index) => (
             <section
               key={index}
               onMouseEnter={() => handleMouseEnter(title)}
@@ -45,7 +45,7 @@ function Projects() {
                 />
               </div>
               <div className="flex flex-col gap-3 flex-1 pb-4">
-                <Title title={title} link="#" />
+                <Title title={title} link={link} />
                 <div>
                   <p className="text-white opacity-[60%] text-sm">
                     {description}

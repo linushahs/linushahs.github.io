@@ -17,7 +17,7 @@ function ExperienceCard() {
     setHoveredItem("");
   };
   return (
-    <div id="experience" className="pt-[80px] lg:pt-[110px] ">
+    <div id="experience" className="pt-[80px] lg:pt-[100px] ">
       <h3 className="section-title mb-6">Experience</h3>
 
       <div className="flex flex-col gap-10 sm:gap-6 ">
@@ -32,7 +32,7 @@ function ExperienceCard() {
                 isHovered
                   ? hoveredItem === title
                     ? "sm:bg-gray-800/50"
-                    : "sm:opacity-60"
+                    : "sm:opacity-40"
                   : "sm:opacity-100"
               )}
             >

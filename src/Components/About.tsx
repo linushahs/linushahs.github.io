@@ -2,7 +2,10 @@ import { aboutContent } from "../constants";
 
 function About() {
   return (
-    <div id="about" className="h-full flex flex-col gap-4 justify-center">
+    <div
+      id="about"
+      className="h-full flex flex-col gap-4 justify-center pt-8 lg:pt-[110px]"
+    >
       <h3 className="section-title">About</h3>
 
       <div className="text-gray-400 flex flex-col gap-5 ">
