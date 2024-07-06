@@ -29,7 +29,7 @@ export const listOfProjects: ProjectSection[] = [
     {
         image: "/nexus.png",
         title: "Nexus Marketers' Website",
-        link: "https://www.nexusmarketers.com/",
+        link: "https://nexus-marketers.vercel.app/",
         description:
             "Nexus Marketers: Your digital growth partner. We craft compelling websites, employ innovative strategies, and master advanced SEO for elevated brand visibility and business success. Join us to amplify your online presence!",
         skills: [
@@ -89,7 +89,22 @@ interface ExperienceCard {
 
 export const experiences: ExperienceCard[] = [
     {
-        date: "Oct 2023 - PRESENT",
+        date: "Mar 2024 - Present",
+        title: "Mid-level React Developer - Shotcoder Tech",
+        link: "https://www.shotcoder.com/",
+        description: "ShotCoder Tech is a tech company that was established in 2019. It is a young and dynamic organization dedicated to developing innovative solutions for businesses and providing reliable hosting solutions to its clients.",
+        technologies: [
+            "Typescript",
+            "Tailwind CSS",
+            "Nextjs",
+            "React",
+            "SWR",
+            "Zustand",
+            "Tanstack"
+        ]
+    },
+    {
+        date: "Oct 2023 - Mar 2024",
         title: "Frontend Engineer - Kalodhunga Creations",
         link: "https://kalodhunga.com/",
         description:
