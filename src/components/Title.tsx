@@ -6,7 +6,7 @@ interface TitleProps {
   className?: string;
 }
 
-function Title({ title, link = "#", className }: TitleProps) {
+function Title({ title, link, className }: TitleProps) {
   return (
     <a
       href={link}

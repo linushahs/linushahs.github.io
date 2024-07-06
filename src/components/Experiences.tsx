@@ -69,7 +69,7 @@ function ExperienceCard() {
 
       <Title
         title="View full resume"
-        link="#"
+        link="https://drive.google.com/file/d/188FLNlybvL0GoJV9bxaFacCkQqjAA9em/view?usp=sharing"
         className="pt-8 lg:px-5 lg:pt-7"
       />
     </div>
