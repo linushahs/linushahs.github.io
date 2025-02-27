@@ -36,7 +36,7 @@ function ExperienceCard() {
                   : "sm:opacity-100"
               )}
             >
-              <div className="w-[23%] text-gray-500 font-semibold uppercase text-sm text-nowrap pt-1">
+              <div className="w-[23%] text-gray-500 font-semibold uppercase text-xs text-nowrap pt-1">
                 {date}
               </div>
 
